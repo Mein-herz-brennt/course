@@ -1,0 +1,1 @@
+{'data': [{'first_name': '//Andrij//', 'phone_number': '+380992193933', 'user_id': '1018185170', 'adres': 'Вул. ыванова'}]}
