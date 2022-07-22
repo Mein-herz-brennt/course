@@ -1,2 +1,2 @@
 # course
-my courses/education
+my courses/education in university
