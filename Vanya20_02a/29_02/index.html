@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta content="text/html" charset="utf-8">
+    <style>
+        input{
+            align-content: center;
+            display: block;
+            width: 30%;
+            height: calc(2.25rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #bdbdbd;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .button1{
+            margin-top: 5px;
+            margin-left: 12px;
+            width: 30%;
+            height: 40px;
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        .button1:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+        #firstP{
+            position: relative;
+            left: 35%;
+        }
+        h1{text-align: center;
+        }
+        h2{
+            position: relative;
+            left: 37%;
+        }
+        h3{
+            position: relative;
+            left: 37% ;
+        }
+        .P{
+            position: relative;
+            left: 36%;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Телефонна книга</h1>
+<form method="POST" action='/'>
+    <p id="firstP">
+        <label>
+            <input type="text" name="name" placeholder="Введіть ім'я друга">
+        </label>
+        <label>
+            <input type="text" name="last_name" placeholder="Введіть телефон">
+        </label>
+        <button class = "button button1">Додати</button>
+    </p>
+
+
+</form>
+<p class = "P">
+    <input type="button" onclick="window.location.href = '/correct_numb.html';" value="Редагувати номер"/>
+</p>
+<p class = "P">
+    <input type="button" onclick="window.location.href = '/correct_name.html';" value="Редагувати ім'я"/>
+</p>
+<p class = "P">
+    <input type="button" onclick="window.location.href = '/find_person.html';" value="Пошук по номеру чи імені"/>
+</p>
+<p class = "P">
+    <input type="button" onclick="location.href = '/delete.html';" value="Видалити друга"/>
+</p>
+<p id = "change_me">
+<h3>Ну давай додай вже його!</h3>
+</p>
+</body>
+</html>

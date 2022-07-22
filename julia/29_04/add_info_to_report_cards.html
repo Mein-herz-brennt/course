@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Додавання інформації до табелів співробітників</title>
+    <style>
+        body {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1 style="font-size:250%;">
+        Додавання інформації
+    </h1>
+    <form method="POST"  style="text-align: left;" action="/report_cards.json">
+        <select name="employee">
+            $employees
+        </select>
+        <input type="date" name="date">
+        <input type="number" name="hours" placeholder="Відпрацьовані години">
+        <input type="submit" value="Додати інформацію до табелю">
+        $info_text
+    </form>
+    <h1></h1>
+    <form style="text-align: left;">
+        <a href="/" title="Повернутися на головну сторінку">Повернутися на головну сторінку</a>
+        <a href="/delete.html" title="Видалити Табель">Видалити Табель</a>
+        <a href="/update.html" title="Редагувати табель">Редагувати табель</a>
+    </form>
+</body>
+</html>

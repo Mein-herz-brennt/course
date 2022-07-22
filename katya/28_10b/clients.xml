@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Clients>
+
+<User><client_id>C01</client_id><name>Доміно</name><address>domino@gmail.com</address></User><User><client_id>C02</client_id><name>Кондор</name><address>condor@gmail.com</address></User><User><client_id>С03</client_id><name>Степан</name><address>admin@gmail.com</address></User></Clients>

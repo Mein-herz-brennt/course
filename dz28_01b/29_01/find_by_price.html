@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Пошук по ціні</title>
+</head>
+<body>
+ <h1>Обидва поля повинні бути заповнені, в другому полі число повинно бути більше ніж у першому</h1>
+     <form method="POST" action='/find_by_price.html'>
+         <p>
+             <input type="text" name="price_min" placeholder="Введіть мінімальну ціну іграшки">
+             <input type="text" name="price_max" placeholder="Введіть Максимальну ціну іграшки">
+             <input type="submit" value="Знайти">
+         </p>
+     </form>
+ <p>result</p>
+ <p><i><a href="/">На головну</a></i></p>
+ <p><i><a href="/add_new_toy.html">Додати нову іграшку</a></i></p>
+ <p><i><a href="/delete_toy.html">Видалити іграшку</a></i></p>
+ <p><i><a href="/update_toy.html">Змінити інформацію про іграшку</a></i></p>
+ <p><i><a href="/find_by_age.html">Пошук за віком</a></i></p>
+</body>
+</html>

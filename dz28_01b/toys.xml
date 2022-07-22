@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toys>
+    <Toy>
+        <title>Плюшевий ведмедик</title>
+        <years>0-+</years>
+        <price>300</price>
+    </Toy>
+    <Toy>
+        <title>Машинка на пульті</title>
+        <years>5-+</years>
+        <price>500</price>
+    </Toy>
+    <Toy>
+        <title>Лялька Barbie</title>
+        <years>3-18</years>
+        <price>200</price>
+    </Toy>
+    <Toy>
+        <title>М'яч футбольний</title>
+        <years>0-+</years>
+        <price>725</price>
+    </Toy>
+    <Toy>
+        <title>Конструктор</title>
+        <years>3-+</years>
+        <price>1000</price>
+    </Toy>
+    <Toy>
+        <title>Іграшковий пістолет</title>
+        <years>5-16</years>
+        <price>100</price>
+    </Toy>
+    <Toy>
+        <title>Іграшкова кухня</title>
+        <years>4-12</years>
+        <price>637</price>
+    </Toy>
+    <Toy>
+        <title>Іграшковий посуд</title>
+        <years>3-12</years>
+        <price>53</price>
+    </Toy>
+</Toys>

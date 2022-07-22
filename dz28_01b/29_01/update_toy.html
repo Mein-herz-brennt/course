@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Змінити інформацію про іграшку</title>
+</head>
+<body>
+<h1>Заповніть поля для поновлення інформації про іграшку</h1>
+<form method="POST" action='/update_toy.html'>
+      <p>
+        <select size="1" name="name">
+          currencies
+        </select>
+        <input type="text" name="min_age" placeholder="Введіть мінімальний вік">
+        <input type="text" name="max_age" placeholder="Введіть максимальний вік або +">
+        <input type="number" name="price" placeholder="Введіть ціну">
+        <input type="submit" value="Додати">
+      </p>
+    </form>
+<p>result</p>
+<p><i><a href="/">На головну</a></i></p>
+<p><i><a href="/delete_toy.html">Видалити іграшку</a></i></p>
+<p><i><a href="/add_new_toy.html">Додати нову іграшку</a></i></p>
+<p><i><a href="/find_by_age.html">Пошук за віком</a></i></p>
+<p><i><a href="/find_by_price.html">Пошук за ціною</a></i></p>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Products>
+
+<Product><product_id>P01</product_id><name>Олівець</name><unit>.шт</unit><price>2.5</price></Product><Product><product_id>P02</product_id><name>Ручка кулькова</name><unit>.шт</unit><price>2.4</price></Product><Product><product_id>P03</product_id><name>Кольорові олівці</name><unit>.шт</unit><price>1.8</price></Product></Products>

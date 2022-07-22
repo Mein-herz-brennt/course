@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Scores>
+
+<User><client_id>С03</client_id><name>Степан</name><address>admin@gmail.com</address></User><Number><num_id>I03</num_id><no>398</no><date>2022-05-22</date><client_id>С03</client_id></Number><Payed><l_id>I03</l_id><p_id>P03</p_id><quantity>.шт</quantity></Payed><Product><product_id>P03</product_id><name>Кольорові олівці</name><unit>.шт</unit><price>1.8</price></Product></Scores>

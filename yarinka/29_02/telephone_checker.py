@@ -1,0 +1,55 @@
+import sqlite3
+
+
+class FriendPhones:
+
+    def __init__(self):
+        self.conn = sqlite3.connect("friends.db")
+        self.cursor = self.conn.cursor()
+        self.conn.row_factory = sqlite3.Row
+
+    def new_friend(self, name, phone, info_about):
+        self.cursor.execute(f"""INSERT INTO friends VALUES (?,?)""", (name, phone))
+        self.cursor.execute(f"""INSERT INTO friends_info VALUES (?,?)""", (name, info_about))
+        self.conn.commit()
+        return "Друга успішно додано!"
+
+    def get_name_and_info(self, phone):
+        name = self.cursor.execute(f"""SELECT * FROM friends WHERE phone = ?""", (phone,)).fetchone()[0]
+        info = self.cursor.execute(f"""SELECT * FROM friends_info WHERE name = ?""", (name,)).fetchone()[1]
+        print(name)
+        print(info)
+        return info
+
+    def change_friend_name(self, new_name, phone):
+        all_ab = self.get_name_and_info(phone)
+        self.cursor.execute(f"""UPDATE friends SET name = ? WHERE phone = ?""", (new_name, phone))
+        self.cursor.execute(f"""UPDATE friends_info SET name = ? WHERE info = ?""", (new_name, all_ab))
+        self.conn.commit()
+        return "І'мя друга змінено!"
+
+    def change_friend_phone(self, name, new_phone):
+        self.cursor.execute(f"""UPDATE friends SET phone = ? WHERE name = ?""", (new_phone, name))
+        self.conn.commit()
+        return "Номер друга змінено!"
+
+    def find_friend(self, name, phone):
+        global all_about
+        try:
+
+            all_info = self.cursor.execute(f"""SELECT * FROM friends WHERE name = ? or phone = ?""",
+                                           (name, phone)).fetchall()
+            for i in all_info:
+                all_about = self.cursor.execute(f"""SELECT * FROM friends_info WHERE name = ?""", (i[0],)).fetchall()
+            friends = []
+            for i in all_info:
+                for j in all_about:
+                    friends.append(f"Ім'я: {i[0]}, Номер: {i[1]}, Інформація про Друга: {j[1]}")
+            return friends
+        except Exception:
+            return "Вибачте та у вас нема такого друга!"
+
+    def delete_friend(self, name, phone):
+        self.cursor.execute(f"""DELETE FROM friends WHERE name = ? and phone = ?""", (name, phone))
+        self.conn.commit()
+        return "Видалення успішне!"
